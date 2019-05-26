@@ -1,8 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-
-const App = () => {
-  return <div>Politico React</div>;
-};
+import App from './App';
+import './index.css';
 
 render(<App />, document.getElementById('app'));

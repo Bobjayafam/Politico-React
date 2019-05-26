@@ -1,0 +1,282 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing Page renders correctly 1`] = `
+<MemoryRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "canGo": [Function],
+        "createHref": [Function],
+        "entries": Array [
+          Object {
+            "hash": "",
+            "key": "19s3e2",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+        ],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "index": 0,
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "key": "19s3e2",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <LandingPage>
+      <div
+        className="main-container"
+      >
+        <Navbar>
+          <nav
+            className="navbar container"
+          >
+            <div
+              className="navbar-brand"
+            >
+              <NavLink
+                href="index.html"
+                to="/"
+              >
+                <Route
+                  path="\\\\/"
+                >
+                  <Link
+                    aria-current="page"
+                    className="active"
+                    href="index.html"
+                    style={Object {}}
+                    to="/"
+                  >
+                    <a
+                      aria-current="page"
+                      className="active"
+                      href="/"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <img
+                        alt="logo"
+                        src="test-file-stub"
+                      />
+                    </a>
+                  </Link>
+                </Route>
+              </NavLink>
+            </div>
+            <label
+              className="navbar_toggle"
+              htmlFor="toggle"
+              id="nav-icon"
+            >
+              ☰
+            </label>
+            <input
+              id="toggle"
+              type="checkbox"
+            />
+            <ul
+              className="navbar-menu"
+            >
+              <li>
+                <NavLink
+                  className="active"
+                  href="index.html"
+                  to="/"
+                >
+                  <Route
+                    path="\\\\/"
+                  >
+                    <Link
+                      aria-current="page"
+                      className="active active"
+                      href="index.html"
+                      style={Object {}}
+                      to="/"
+                    >
+                      <a
+                        aria-current="page"
+                        className="active active"
+                        href="/"
+                        onClick={[Function]}
+                        style={Object {}}
+                      >
+                        Home
+                      </a>
+                    </Link>
+                  </Route>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  href="signup.html"
+                  to="/signup"
+                >
+                  <Route
+                    path="\\\\/signup"
+                  >
+                    <Link
+                      aria-current={null}
+                      href="signup.html"
+                      to="/signup"
+                    >
+                      <a
+                        aria-current={null}
+                        href="/signup"
+                        onClick={[Function]}
+                      >
+                        SignUp
+                      </a>
+                    </Link>
+                  </Route>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  href="login.html"
+                  to="/login"
+                >
+                  <Route
+                    path="\\\\/login"
+                  >
+                    <Link
+                      aria-current={null}
+                      href="login.html"
+                      to="/login"
+                    >
+                      <a
+                        aria-current={null}
+                        href="/login"
+                        onClick={[Function]}
+                      >
+                        LogIn
+                      </a>
+                    </Link>
+                  </Route>
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </Navbar>
+        <section
+          className="hero mb-50"
+        >
+          <div
+            className="hero-text"
+          >
+            <h1
+              className="mb-20"
+            >
+              Welcome to politico
+            </h1>
+            <p
+              className="mb-50"
+            >
+              Your Secure online voting platform
+            </p>
+            <button
+              type="button"
+            >
+              Get started
+            </button>
+          </div>
+        </section>
+        <section
+          className="container"
+        >
+          <div
+            className="features text-center text-bold mb-20"
+          >
+            <p
+              className="features-heading"
+            >
+              Only three steps needed
+            </p>
+          </div>
+          <div
+            className="cards text-center"
+          >
+            <div
+              className="card2"
+            >
+              <div
+                className="card-label"
+              >
+                <h1>
+                  REGISTER
+                </h1>
+                <i
+                  className="far fa-registered fa-4x"
+                />
+                <p>
+                  If you are up to the voting age of 18, Register via a simple process. You can register on all device type
+                </p>
+              </div>
+            </div>
+            <div
+              className="card2"
+            >
+              <div
+                className="card-label"
+              >
+                <h1>
+                  VOTE
+                </h1>
+                <i
+                  className="fas fa-person-booth fa-4x"
+                />
+                <p>
+                  Search for the political office and your preferred candidate. Cast your Vote from the comfort of your home. No more long queues at polling stations
+                </p>
+              </div>
+            </div>
+            <div
+              className="card2"
+            >
+              <div
+                className="card-label"
+              >
+                <h1>
+                  RESULT
+                </h1>
+                <i
+                  className="fas fa-poll fa-4x"
+                />
+                <p>
+                  View Results of a secure and accountable process
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <Footer>
+          <footer
+            className="text-center mt-20"
+          >
+            <div
+              className="container"
+            >
+              <span>
+                Copyright © 2019 | Politico- An Andela Bootcamp Project
+              </span>
+            </div>
+          </footer>
+        </Footer>
+      </div>
+    </LandingPage>
+  </Router>
+</MemoryRouter>
+`;
