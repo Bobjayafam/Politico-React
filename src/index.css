@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  color: #777;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.main-container {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 100px;
+  display: block;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.text-primary {
+  color: #ff9902;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  width: calc(25% - 16px);
+  background: #f9f9f9;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 16px 16px 48px;
+}
+
+.card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.card2 {
+  width: calc(33% - 20px);
+  background: #ffffff;
+  margin-right: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  padding: 16px 16px 48px;
+}
+
+@media only screen and (max-width: 960px) {
+  .card,
+  .card2 {
+    width: calc(50% - 16px);
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card,
+  .card2 {
+    width: calc(100% - 16px);
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+.card h1 {
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-left: 16px;
+  margin-right: 16px;
+}
