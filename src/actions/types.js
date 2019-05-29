@@ -1,0 +1,8 @@
+export const GET_ERRORS = 'GET_ERRORS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const SIGNUP_STARTED = 'SIGNUP_STARTED';
+export const SIGNUP_SUCCESS = 'SIGNUP_SUCCESS';
+export const SIGNUP_FAILURE = 'SIGNUP_FAILURE';
+export const ALERT_SUCCESS = 'ALERT_SUCCESS';
+export const ALERT_ERROR = 'ALERT_ERROR';
+export const ALERT_CLEAR = 'ALERT_CLEAR';
