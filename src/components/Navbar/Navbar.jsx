@@ -20,7 +20,7 @@ const Navbar = () => {
         <input type="checkbox" id="toggle" />
         <ul className="navbar-menu">
           <li>
-            <NavLink to="/" href="index.html" className="active">
+            <NavLink to="/" href="index.html">
               Home
             </NavLink>
           </li>

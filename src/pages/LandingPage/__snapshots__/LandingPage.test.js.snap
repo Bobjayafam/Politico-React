@@ -12,7 +12,7 @@ exports[`Landing Page renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "19s3e2",
+            "key": "zidmlh",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`Landing Page renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "19s3e2",
+          "key": "zidmlh",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -93,7 +93,6 @@ exports[`Landing Page renders correctly 1`] = `
             >
               <li>
                 <NavLink
-                  className="active"
                   href="index.html"
                   to="/"
                 >
@@ -102,14 +101,14 @@ exports[`Landing Page renders correctly 1`] = `
                   >
                     <Link
                       aria-current="page"
-                      className="active active"
+                      className="active"
                       href="index.html"
                       style={Object {}}
                       to="/"
                     >
                       <a
                         aria-current="page"
-                        className="active active"
+                        className="active"
                         href="/"
                         onClick={[Function]}
                         style={Object {}}

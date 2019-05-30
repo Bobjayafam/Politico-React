@@ -5,7 +5,7 @@ import './LandingPage.css';
 
 const LandingPage = () => (
   <div className="main-container">
-    <Navbar />
+    {/* <Navbar /> */}
     <section className="hero mb-50">
       <div className="hero-text">
         <h1 className="mb-20">Welcome to politico</h1>
