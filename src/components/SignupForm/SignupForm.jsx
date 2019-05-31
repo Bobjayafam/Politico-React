@@ -66,7 +66,7 @@ class Signup extends Component {
 
     const { fisrtname, lastname, email, password, phoneNumnber } = this.state;
     return (
-      <div className="main-container">
+      <>
         <div className="signup-container container">
           <form action="" className="signup-form" onSubmit={this.handleSubmit}>
             <div className="input-group">
@@ -167,7 +167,7 @@ class Signup extends Component {
           </div>
         </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }

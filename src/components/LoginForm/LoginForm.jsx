@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-for */
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
@@ -17,7 +17,7 @@ const loginSchema = Yup.object().shape({
 
 const LoginForm = ({ loginHandler, loggingIn }) => {
   return (
-    <div className="main-container">
+    <>
       <section className="container text-center mb-10">
         <div className="intro-text">
           <h1>LOGIN INTO YOUR ACCOUNT</h1>
@@ -78,7 +78,7 @@ const LoginForm = ({ loginHandler, loggingIn }) => {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

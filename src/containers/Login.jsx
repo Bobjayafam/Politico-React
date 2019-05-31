@@ -9,9 +9,9 @@ class Login extends Component {
   render() {
     const { loginHandler, loggingIn } = this.props;
     return (
-      <div>
+      <>
         <LoginForm loginHandler={loginHandler} loggingIn={loggingIn} />
-      </div>
+      </>
     );
   }
 }

@@ -64,7 +64,7 @@ export const login = user => dispatch => {
     .post('https://politico-ja.herokuapp.com/api/v1/auth/login', user)
     .then(res => {
       dispatch(loginSucceeded(res.data.data));
-      localStorage.setItem('user', JSON.stringify(res.data.data));
+      localStorage.setItem('user', JSON.stringify(res.data.data[0]));
       dispatch(alertSuccess('Login Successful'));
       const decodedToken = jwtDecode(res.data.data[0].token);
       if (decodedToken.isAdmin) {

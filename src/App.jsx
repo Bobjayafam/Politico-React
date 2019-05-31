@@ -6,6 +6,7 @@ import history from './helpers/history';
 import SignupForm from './components/SignupForm/SignupForm';
 import Login from './containers/Login';
 import Navbar from './components/Navbar/Navbar';
+import Admin from './containers/Admin';
 import { clearAlert } from './actions/alert';
 
 class App extends React.Component {
@@ -19,15 +20,16 @@ class App extends React.Component {
   render() {
     const { alert } = this.props;
     return (
-      <div className="col-sm-8 col-sm-offset-2">
+      <div className="main-container">
         <Router history={history}>
           <Navbar />
           {alert.message && <div className={`alert ${alert.type}`}>{alert.message}</div>}
-          <div>
+          <>
             <Route path="/" exact component={LandingPage} />
             <Route path="/signup" component={SignupForm} />
             <Route path="/login" component={Login} />
-          </div>
+            <Route path="/admin-dashboard" component={Admin} />
+          </>
         </Router>
       </div>
     );
