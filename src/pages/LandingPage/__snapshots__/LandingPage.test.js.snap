@@ -12,7 +12,7 @@ exports[`Landing Page renders correctly 1`] = `
         "entries": Array [
           Object {
             "hash": "",
-            "key": "zidmlh",
+            "key": "s9wtf0",
             "pathname": "/",
             "search": "",
             "state": undefined,
@@ -26,7 +26,7 @@ exports[`Landing Page renders correctly 1`] = `
         "listen": [Function],
         "location": Object {
           "hash": "",
-          "key": "zidmlh",
+          "key": "s9wtf0",
           "pathname": "/",
           "search": "",
           "state": undefined,
@@ -40,136 +40,6 @@ exports[`Landing Page renders correctly 1`] = `
       <div
         className="main-container"
       >
-        <Navbar>
-          <nav
-            className="navbar container"
-          >
-            <div
-              className="navbar-brand"
-            >
-              <NavLink
-                href="index.html"
-                to="/"
-              >
-                <Route
-                  path="\\\\/"
-                >
-                  <Link
-                    aria-current="page"
-                    className="active"
-                    href="index.html"
-                    style={Object {}}
-                    to="/"
-                  >
-                    <a
-                      aria-current="page"
-                      className="active"
-                      href="/"
-                      onClick={[Function]}
-                      style={Object {}}
-                    >
-                      <img
-                        alt="logo"
-                        src="test-file-stub"
-                      />
-                    </a>
-                  </Link>
-                </Route>
-              </NavLink>
-            </div>
-            <label
-              className="navbar_toggle"
-              htmlFor="toggle"
-              id="nav-icon"
-            >
-              ☰
-            </label>
-            <input
-              id="toggle"
-              type="checkbox"
-            />
-            <ul
-              className="navbar-menu"
-            >
-              <li>
-                <NavLink
-                  href="index.html"
-                  to="/"
-                >
-                  <Route
-                    path="\\\\/"
-                  >
-                    <Link
-                      aria-current="page"
-                      className="active"
-                      href="index.html"
-                      style={Object {}}
-                      to="/"
-                    >
-                      <a
-                        aria-current="page"
-                        className="active"
-                        href="/"
-                        onClick={[Function]}
-                        style={Object {}}
-                      >
-                        Home
-                      </a>
-                    </Link>
-                  </Route>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  href="signup.html"
-                  to="/signup"
-                >
-                  <Route
-                    path="\\\\/signup"
-                  >
-                    <Link
-                      aria-current={null}
-                      href="signup.html"
-                      to="/signup"
-                    >
-                      <a
-                        aria-current={null}
-                        href="/signup"
-                        onClick={[Function]}
-                      >
-                        SignUp
-                      </a>
-                    </Link>
-                  </Route>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  href="login.html"
-                  to="/login"
-                >
-                  <Route
-                    path="\\\\/login"
-                  >
-                    <Link
-                      aria-current={null}
-                      href="login.html"
-                      to="/login"
-                    >
-                      <a
-                        aria-current={null}
-                        href="/login"
-                        onClick={[Function]}
-                      >
-                        LogIn
-                      </a>
-                    </Link>
-                  </Route>
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
-        </Navbar>
         <section
           className="hero mb-50"
         >
