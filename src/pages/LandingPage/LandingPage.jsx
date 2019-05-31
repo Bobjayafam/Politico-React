@@ -1,11 +1,9 @@
 import React from 'react';
 import Footer from '../../components/Footer/Footer';
-import Navbar from '../../components/Navbar/Navbar';
 import './LandingPage.css';
 
 const LandingPage = () => (
   <div className="main-container">
-    {/* <Navbar /> */}
     <section className="hero mb-50">
       <div className="hero-text">
         <h1 className="mb-20">Welcome to politico</h1>

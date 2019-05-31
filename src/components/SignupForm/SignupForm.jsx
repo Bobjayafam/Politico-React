@@ -64,7 +64,7 @@ class Signup extends Component {
   render() {
     const { registering } = this.props;
 
-    const { fisrtname, lastname, othername, email, password, phoneNumnber } = this.state;
+    const { fisrtname, lastname, email, password, phoneNumnber } = this.state;
     return (
       <div className="main-container">
         <div className="signup-container container">
@@ -81,7 +81,7 @@ class Signup extends Component {
                 value={fisrtname}
                 onChange={this.handleChange}
               />
-              {this.validator.message('firstname', this.state.firstname, 'required|alpha')}
+              {this.validator.message('firstname', this.state.firstname, 'required|alpha|min:2')}
             </div>
             <div className="input-group">
               <label htmlFor="lastname">
@@ -95,20 +95,14 @@ class Signup extends Component {
                 value={lastname}
                 onChange={this.handleChange}
               />
-              {this.validator.message('lastname', this.state.lastname, 'required|alpha')}
+              {this.validator.message('lastname', this.state.lastname, 'required|alpha|min:2')}
             </div>
             <div className="input-group">
               <label htmlFor="email">
                 Email address
                 <span>*</span>
               </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value={email}
-                onChange={this.handleChange}
-              />
+              <input name="email" id="email" value={email} onChange={this.handleChange} />
               {this.validator.message('email', this.state.email, 'required|email')}
             </div>
             <div className="input-group">
