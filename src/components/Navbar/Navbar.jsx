@@ -7,7 +7,8 @@ import './Navbar.css';
 import logo from './logo.png';
 import { logout } from '../../actions/authentication';
 
-export const Navbar = ({ loggedIn, logoutHandler }) => {
+export const Navbar = ({ loggedIn, logoutHandler, user }) => {
+  // console.log(user);
   return (
     <>
       <nav className="navbar container">
@@ -22,21 +23,49 @@ export const Navbar = ({ loggedIn, logoutHandler }) => {
         <input type="checkbox" id="toggle" />
         {loggedIn ? (
           <ul className="navbar-menu">
-            <li>
-              <NavLink to="/admin" href="admin.html" className="active">
-                Dashboard
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/createparty" href="create-party.html">
-                Create Party
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/createoffice" href="create-office.html">
-                Create Office
-              </NavLink>
-            </li>
+            {user && user.isAdmin ? (
+              <>
+                <li>
+                  <NavLink to="/admin" href="admin.html" className="active">
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/createparty" href="create-party.html">
+                    Create Party
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/createoffice" href="create-office.html">
+                    Create Office
+                  </NavLink>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <NavLink to="/admin" href="admin.html" className="active">
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/parties" href="create-party.html">
+                    Political parties
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/vote" href="create-office.html">
+                    Vote
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/results" href="create-office.html">
+                    Election Results
+                  </NavLink>
+                </li>
+              </>
+            )}
+
             <li>
               <NavLink onClick={logoutHandler} to="/login" href="login.html">
                 Logout
@@ -69,6 +98,8 @@ export const Navbar = ({ loggedIn, logoutHandler }) => {
 
 function mapStateToProps(state) {
   const { loggedIn } = state.login;
+  const { user } = state.login.user || {};
+  console.log(user);
   return {
     loggedIn
   };

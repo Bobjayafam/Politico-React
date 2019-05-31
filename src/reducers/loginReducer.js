@@ -7,13 +7,12 @@ export default (state = initialState, action) => {
   switch (action.type) {
     case LOGIN_STARTED:
       return {
-        loggingIn: true,
-        user: action
+        loggingIn: true
       };
     case LOGIN_SUCCESS:
       return {
         loggedIn: true,
-        user: action
+        user: action.user
       };
     case LOGIN_FAILURE:
       return {};

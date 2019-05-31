@@ -7,6 +7,7 @@ import SignupForm from './components/SignupForm/SignupForm';
 import Login from './containers/Login';
 import Navbar from './components/Navbar/Navbar';
 import Admin from './containers/Admin';
+import User from './containers/User';
 import { clearAlert } from './actions/alert';
 
 class App extends React.Component {
@@ -29,6 +30,7 @@ class App extends React.Component {
             <Route path="/signup" component={SignupForm} />
             <Route path="/login" component={Login} />
             <Route path="/admin-dashboard" component={Admin} />
+            <Route path="/user-dashboard" component={User} />
           </>
         </Router>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import history from '../../helpers/history';
 import Footer from '../../components/Footer/Footer';
 import './LandingPage.css';
 
@@ -8,7 +9,9 @@ const LandingPage = () => (
       <div className="hero-text">
         <h1 className="mb-20">Welcome to politico</h1>
         <p className="mb-50">Your Secure online voting platform</p>
-        <button type="button">Get started</button>
+        <button type="button" onClick={() => history.push('/signup')}>
+          Get started
+        </button>
       </div>
     </section>
     <section className="container">
