@@ -3,7 +3,7 @@ import Footer from '../../components/Footer/Footer';
 import './LandingPage.css';
 
 const LandingPage = () => (
-  <div className="main-container">
+  <>
     <section className="hero mb-50">
       <div className="hero-text">
         <h1 className="mb-20">Welcome to politico</h1>
@@ -46,7 +46,7 @@ const LandingPage = () => (
       </div>
     </section>
     <Footer />
-  </div>
+  </>
 );
 
 export default LandingPage;
