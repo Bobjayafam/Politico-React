@@ -120,24 +120,6 @@ class Signup extends Component {
               {this.validator.message('password', this.state.password, 'required|min:6')}
             </div>
             <div className="input-group">
-              <label htmlFor="phoneNumber">
-                Phone Number
-                <span>*</span>
-              </label>
-              <input
-                type="number"
-                name="phoneNumber"
-                id="phoneNumber"
-                value={phoneNumnber}
-                onChange={this.handleChange}
-              />
-              {this.validator.message(
-                'phone number',
-                this.state.phoneNumber,
-                'required|integer|size:11'
-              )}
-            </div>
-            <div className="input-group">
               <label htmlFor="passportUrl">
                 Profile Picture
                 <span>*</span>

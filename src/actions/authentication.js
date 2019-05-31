@@ -44,9 +44,8 @@ export const signup = user => dispatch => {
   axios
     .post('https://politico-ja.herokuapp.com/api/v1/auth/signup', user)
     .then(res => {
-      const userDetails = { user: res.data.data[0], isAdmin: false };
-      dispatch(signupSucceeded(userDetails));
-      localStorage.setItem('user', JSON.stringify(res.data.data));
+      dispatch(signupSucceeded(res.data.data[0]));
+      localStorage.setItem('user', JSON.stringify(res.data.data[0]));
       dispatch(alertSuccess('Registration Successful'));
       setTimeout(() => {
         history.push('/user-dashboard');
@@ -63,7 +62,7 @@ export const login = user => dispatch => {
   axios
     .post('https://politico-ja.herokuapp.com/api/v1/auth/login', user)
     .then(res => {
-      dispatch(loginSucceeded(res.data.data));
+      dispatch(loginSucceeded(res.data.data[0]));
       localStorage.setItem('user', JSON.stringify(res.data.data[0]));
       dispatch(alertSuccess('Login Successful'));
       const decodedToken = jwtDecode(res.data.data[0].token);
