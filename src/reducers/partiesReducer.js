@@ -5,7 +5,6 @@ import {
 } from '../actions/types';
 
 export default (state = {}, action) => {
-  console.log(action);
   switch (action.type) {
     case FETCH_PARTIES_STARTED:
       return { gettingParties: true };

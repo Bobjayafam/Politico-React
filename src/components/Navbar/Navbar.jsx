@@ -8,7 +8,6 @@ import logo from './logo.png';
 import { logout } from '../../actions/authentication';
 
 export const Navbar = ({ loggedIn, logoutHandler, user }) => {
-  // console.log(user);
   return (
     <>
       <nav className="navbar container">
@@ -23,7 +22,7 @@ export const Navbar = ({ loggedIn, logoutHandler, user }) => {
         <input type="checkbox" id="toggle" />
         {loggedIn ? (
           <ul className="navbar-menu">
-            {user && user.isAdmin ? (
+            {user.isAdmin ? (
               <>
                 <li>
                   <NavLink to="/admin" href="admin.html" className="active">
@@ -99,9 +98,9 @@ export const Navbar = ({ loggedIn, logoutHandler, user }) => {
 function mapStateToProps(state) {
   const { loggedIn } = state.login;
   const { user } = state.login.user || {};
-  console.log(user);
   return {
-    loggedIn
+    loggedIn,
+    user
   };
 }
 
