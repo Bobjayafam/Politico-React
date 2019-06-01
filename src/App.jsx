@@ -8,6 +8,7 @@ import Login from './containers/Login';
 import Navbar from './components/Navbar/Navbar';
 import Admin from './containers/Admin';
 import User from './containers/User';
+import UserParties from './containers/UserParties';
 import { clearAlert } from './actions/alert';
 
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
             <Route path="/login" component={Login} />
             <Route path="/admin-dashboard" component={Admin} />
             <Route path="/user-dashboard" component={User} />
+            <Route path="/parties" component={UserParties} />
           </>
         </Router>
       </div>
@@ -38,11 +40,11 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   const { alert } = state;
   return {
     alert
   };
-}
+};
 
 export default connect(mapStateToProps)(App);

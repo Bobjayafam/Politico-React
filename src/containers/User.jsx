@@ -19,11 +19,4 @@ function mapStateToProps(state) {
   };
 }
 
-// const mapDispatchToProps = {
-
-// };
-
-export default connect(
-  mapStateToProps
-  /* mapDispatchToProps */
-)(User);
+export default connect(mapStateToProps)(User);
