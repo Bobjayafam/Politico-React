@@ -64,7 +64,7 @@ class Signup extends Component {
   render() {
     const { registering } = this.props;
 
-    const { fisrtname, lastname, email, password, phoneNumnber } = this.state;
+    const { fisrtname, lastname, email, password } = this.state;
     return (
       <>
         <div className="signup-container container">

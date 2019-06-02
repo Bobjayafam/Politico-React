@@ -1,26 +1,35 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import AdminDashboard from '../components/AdminDashboard/AdminDashboard';
-import { fetchParties } from '../actions/parties';
+import { fetchParties, addParty } from '../actions/parties';
 
 class Admin extends Component {
   state = {};
 
   render() {
-    const { fetchPartiesHandler, parties } = this.props;
-    return <AdminDashboard fetchPartiesHandler={fetchPartiesHandler} parties={parties} />;
+    const { fetchPartiesHandler, parties, addPartyHandler } = this.props;
+    return (
+      <>
+        <AdminDashboard
+          fetchPartiesHandler={fetchPartiesHandler}
+          parties={parties}
+          addPartyHandler={addPartyHandler}
+        />
+      </>
+    );
   }
 }
 
 function mapStateToProps(state) {
-  const { parties } = state.parties;
+  const { parties } = state;
   return {
     parties
   };
 }
 
 const mapDispatchToProps = {
-  fetchPartiesHandler: fetchParties
+  fetchPartiesHandler: fetchParties,
+  addPartyHandler: addParty
 };
 
 export default connect(

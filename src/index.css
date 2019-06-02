@@ -381,3 +381,18 @@ table button:hover {
     display: block;
   }
 }
+
+.new-party {
+  background: #ff9902;
+  width: 30%;
+  padding: 15px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
