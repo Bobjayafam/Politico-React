@@ -22,7 +22,7 @@ class App extends React.Component {
   render() {
     const { alert } = this.props;
     return (
-      <div className="main-container">
+      <>
         <Router history={history}>
           <Navbar />
           {alert.message && <div className={`alert ${alert.type}`}>{alert.message}</div>}
@@ -35,7 +35,7 @@ class App extends React.Component {
             <Route path="/parties" component={UserParties} />
           </>
         </Router>
-      </div>
+      </>
     );
   }
 }

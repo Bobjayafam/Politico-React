@@ -25,7 +25,7 @@ export const Navbar = ({ loggedIn, logoutHandler, user }) => {
             {user.isAdmin ? (
               <>
                 <li>
-                  <NavLink to="/admin" href="admin.html" className="active">
+                  <NavLink to="/admin-dashboard" href="admin.html" className="active">
                     Dashboard
                   </NavLink>
                 </li>
@@ -43,7 +43,7 @@ export const Navbar = ({ loggedIn, logoutHandler, user }) => {
             ) : (
               <>
                 <li>
-                  <NavLink to="/admin" href="admin.html" className="active">
+                  <NavLink to="/user-dashboard" href="admin.html" className="active">
                     Dashboard
                   </NavLink>
                 </li>
